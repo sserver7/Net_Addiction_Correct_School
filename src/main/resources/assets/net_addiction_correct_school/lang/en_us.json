@@ -1,0 +1,24 @@
+{
+  "item.net_addiction_correct_school.delegation_agreement": "Delegation Agreement",
+  "item.net_addiction_correct_school.rusty_wire": "Rusty Wire",
+  "item.net_addiction_correct_school.corporal_punishment_record": "Corporal Punishment Record",
+  "item.net_addiction_correct_school.medical_record": "Medical Record",
+  "item.net_addiction_correct_school.financial_bill": "Financial Bill",
+  "item.net_addiction_correct_school.distress_note": "Distress Note",
+  "item.net_addiction_correct_school.stale_bread": "Stale Bread",
+  "item.net_addiction_correct_school.sedative": "Sedative",
+  "item.net_addiction_correct_school.antidepressant": "Antidepressant",
+  "item.net_addiction_correct_school.stun_gun": "Stun Gun",
+
+  "item.net_addiction_correct_school.instructor_uniform": "Instructor Uniform",
+  "item.net_addiction_correct_school.parent_coat": "Parent Coat",
+  "item.net_addiction_correct_school.maintenance_clothes": "Maintenance Clothes",
+
+  "item.net_addiction_correct_school.toolbox": "Toolbox",
+  "item.net_addiction_correct_school.lockpick": "Lockpick",
+  "item.net_addiction_correct_school.key_card": "Key Card",
+
+  "itemGroup.nacs_basic": "Net Addiction Correct School Mod - Basics",
+  "itemGroup.nacs_gear": "Net Addiction Correct School Mod - Gear",
+  "itemGroup.nacs_tools": "Net Addiction Correct School Mod - Tools"
+}

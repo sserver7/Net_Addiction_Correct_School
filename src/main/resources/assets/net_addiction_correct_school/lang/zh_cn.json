@@ -1,0 +1,24 @@
+{
+  "item.net_addiction_correct_school.delegation_agreement": "委托协议",
+  "item.net_addiction_correct_school.rusty_wire": "生锈的铁丝",
+  "item.net_addiction_correct_school.corporal_punishment_record": "体罚记录",
+  "item.net_addiction_correct_school.medical_record": "医疗记录",
+  "item.net_addiction_correct_school.financial_bill": "财务账单",
+  "item.net_addiction_correct_school.distress_note": "求救纸条",
+  "item.net_addiction_correct_school.stale_bread": "陈面包",
+  "item.net_addiction_correct_school.sedative": "镇静剂",
+  "item.net_addiction_correct_school.antidepressant": "抗抑郁药",
+  "item.net_addiction_correct_school.stun_gun": "电击枪",
+
+  "item.net_addiction_correct_school.instructor_uniform": "教官制服",
+  "item.net_addiction_correct_school.parent_coat": "家长外套",
+  "item.net_addiction_correct_school.maintenance_clothes": "维修工服",
+
+  "item.net_addiction_correct_school.toolbox": "工具箱",
+  "item.net_addiction_correct_school.lockpick": "撬锁器",
+  "item.net_addiction_correct_school.key_card": "门禁卡",
+
+  "itemGroup.nacs_basic": "戒网瘾学校模组 - 基础物品",
+  "itemGroup.nacs_gear": "戒网瘾学校模组 - 装备",
+  "itemGroup.nacs_tools": "戒网瘾学校模组 - 工具"
+}
