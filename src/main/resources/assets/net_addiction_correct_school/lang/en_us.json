@@ -1,24 +1,23 @@
 {
-  "item.net_addiction_correct_school.delegation_agreement": "Delegation Agreement",
+  "item.net_addiction_correct_school.enrollment_agreement": "Enrollment Contract",
+  "item.net_addiction_correct_school.tracking_bracelet": "Tracking Bracelet",
+  "item.net_addiction_correct_school.model_student_badge": "Model Student Badge",
   "item.net_addiction_correct_school.rusty_wire": "Rusty Wire",
-  "item.net_addiction_correct_school.corporal_punishment_record": "Corporal Punishment Record",
-  "item.net_addiction_correct_school.medical_record": "Medical Record",
-  "item.net_addiction_correct_school.financial_bill": "Financial Bill",
+  "item.net_addiction_correct_school.discipline_log": "Discipline Log",
+  "item.net_addiction_correct_school.medical_dossier": "Medical Dossier",
+  "item.net_addiction_correct_school.financial_ledger": "Financial Ledger",
   "item.net_addiction_correct_school.distress_note": "Distress Note",
   "item.net_addiction_correct_school.stale_bread": "Stale Bread",
   "item.net_addiction_correct_school.sedative": "Sedative",
-  "item.net_addiction_correct_school.antidepressant": "Antidepressant",
-  "item.net_addiction_correct_school.stun_gun": "Stun Gun",
-
+  "item.net_addiction_correct_school.calming_pill": "Calming Pill",
+  "item.net_addiction_correct_school.compliance_prod": "Compliance Prod",
   "item.net_addiction_correct_school.instructor_uniform": "Instructor Uniform",
-  "item.net_addiction_correct_school.parent_coat": "Parent Coat",
-  "item.net_addiction_correct_school.maintenance_clothes": "Maintenance Clothes",
-
+  "item.net_addiction_correct_school.visitor_coat": "Visitor Coat",
+  "item.net_addiction_correct_school.maintenance_garb": "Maintenance Garb",
   "item.net_addiction_correct_school.toolbox": "Toolbox",
-  "item.net_addiction_correct_school.lockpick": "Lockpick",
-  "item.net_addiction_correct_school.key_card": "Key Card",
-
-  "itemGroup.nacs_basic": "Net Addiction Correct School Mod - Basics",
-  "itemGroup.nacs_gear": "Net Addiction Correct School Mod - Gear",
-  "itemGroup.nacs_tools": "Net Addiction Correct School Mod - Tools"
+  "item.net_addiction_correct_school.access_card": "Access Card",
+  "item.net_addiction_correct_school.lockpick_set": "Lockpick Set",
+  "itemGroup.nacs_basics": "NACS - Essentials",
+  "itemGroup.nacs_apparel": "NACS - Apparel",
+  "itemGroup.nacs_utilities": "NACS - Utilities"
 }

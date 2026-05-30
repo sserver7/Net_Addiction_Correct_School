@@ -32,6 +32,4 @@ public class NACSblocks {
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
-
 }
-//TODO从8:20开始看Block教程
