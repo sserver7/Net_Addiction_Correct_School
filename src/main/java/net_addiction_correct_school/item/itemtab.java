@@ -32,7 +32,31 @@ public class itemtab {
                         output.accept(NACSitems.STALE_BREAD.get());
                         output.accept(NACSitems.SEDATIVE.get());
                         output.accept(NACSitems.CALMING_PILL.get());
+                        // 添加所有方块
                         output.accept(NACSblocks.REINFORCED_WALL.get());
+                        output.accept(NACSblocks.SCHOOL_WALL.get());
+                        output.accept(NACSblocks.SCHOOL_FLOOR.get());
+                        output.accept(NACSblocks.REINFORCED_WINDOW.get());
+                        output.accept(NACSblocks.SURVEILLANCE_CAMERA.get());
+                        output.accept(NACSblocks.COMPLAINT_BOX.get());
+                        output.accept(NACSblocks.ELECTRIC_FENCE.get());
+                        output.accept(NACSblocks.DETENTION_DOOR.get());
+                        output.accept(NACSblocks.VENT_ENTRANCE.get());
+                        output.accept(NACSblocks.REINFORCED_DOOR_FRAME.get());
+                        output.accept(NACSblocks.CONFINEMENT_WALL.get());
+                        output.accept(NACSblocks.WATER_CELL_BLOCK.get());
+                        output.accept(NACSblocks.TRAINING_GROUND_FLOOR.get());
+                        output.accept(NACSblocks.BLOOD_STAIN.get());
+                        output.accept(NACSblocks.MONITOR_CENTER_BLOCK.get());
+                        output.accept(NACSblocks.FILE_CABINET.get());
+                        output.accept(NACSblocks.CONFISCATED_ITEM_CHEST.get());
+                        output.accept(NACSblocks.SCHOOL_LIGHT.get());
+                        output.accept(NACSblocks.BULLETIN_BOARD.get());
+                        output.accept(NACSblocks.SCHOOL_DESK.get());
+                        output.accept(NACSblocks.SCHOOL_CHAIR.get());
+                        output.accept(NACSblocks.SCHOOL_BED.get());
+                        output.accept(NACSblocks.LOOSE_BRICK.get());
+                        output.accept(NACSblocks.ENTRANCE_SIGN.get());
                     })
                     .build()
             );
