@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -20,8 +21,9 @@ public class NACSblocks {
     // 核心结构方块
     public static final DeferredBlock<Block> REINFORCED_WALL =
             registerBlocks("reinforced_wall",
-                    () -> new Block(BlockBehaviour.Properties.of()
+                    () -> new WallBlock(BlockBehaviour.Properties.of()
                             .strength(50.0F, 2000.0F)
+                            .sound(SoundType.STONE)
                             .requiresCorrectToolForDrops()));  // 高硬度墙壁
 
     public static final DeferredBlock<Block> SCHOOL_WALL =
