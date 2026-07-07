@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "net_addiction_correct_school:enrollment_agreement"
+  },
+  "result": {
+    "count": 1,
+    "id": "net_addiction_correct_school:paper_dust"
+  }
+}

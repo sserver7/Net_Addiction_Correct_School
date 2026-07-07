@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "net_addiction_correct_school:item/financial_ledger"
+  }
+}

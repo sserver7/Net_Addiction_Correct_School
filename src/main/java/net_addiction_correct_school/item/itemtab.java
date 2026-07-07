@@ -32,6 +32,9 @@ public class itemtab {
                         output.accept(NACSitems.STALE_BREAD.get());
                         output.accept(NACSitems.SEDATIVE.get());
                         output.accept(NACSitems.CALMING_PILL.get());
+                        output.accept(NACSitems.REINFORCED_BRICK.get());
+                        output.accept(NACSitems.REINFORCED_REBAR.get());
+                        output.accept(NACSitems.PAPER_DUST.get());
                         // 添加所有方块
                         output.accept(NACSblocks.REINFORCED_WALL.get());
                         output.accept(NACSblocks.SCHOOL_WALL.get());

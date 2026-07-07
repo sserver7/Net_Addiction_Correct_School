@@ -39,7 +39,8 @@ public class NACSblocks {
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(10.0F, 1200.0F)
                             .noOcclusion()  // 不遮挡光线
-                            .isValidSpawn((state, getter, pos, entity) -> false)));  // 类似铁栏杆的窗户
+                            .isValidSpawn((state, getter, pos, entity) -> false)
+                            .noLootTable()));  // 类似铁栏杆的窗户
 
     public static final DeferredBlock<Block> SCHOOL_CEILING =
             registerBlocks("school_ceiling",
@@ -56,7 +57,8 @@ public class NACSblocks {
     public static final DeferredBlock<Block> COMPLAINT_BOX =
             registerBlocks("complaint_box",
                     () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(2.5F, 6.0F)));  // 举报箱，暂时普通方块
+                            .strength(2.5F, 6.0F)
+                            .noLootTable()));  // 举报箱，暂时普通方块
 
     public static final DeferredBlock<Block> ELECTRIC_FENCE =
             registerBlocks("electric_fence",
@@ -69,7 +71,8 @@ public class NACSblocks {
             registerBlocks("detention_door",
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(10.0F, 1200.0F)
-                            .noOcclusion()));  // 禁闭室铁门，暂时普通方块
+                            .noOcclusion()
+                            .noLootTable()));  // 禁闭室铁门，暂时普通方块
 
     public static final DeferredBlock<Block> VENT_ENTRANCE =
             registerBlocks("vent_entrance",
@@ -87,18 +90,21 @@ public class NACSblocks {
             registerBlocks("confinement_wall",
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(8.0F, 1200.0F)
-                            .lightLevel(state -> 0)));  // 禁闭室墙壁，无光照
+                            .lightLevel(state -> 0)
+                            .noLootTable()));  // 禁闭室墙壁，无光照
 
     public static final DeferredBlock<Block> WATER_CELL_BLOCK =
             registerBlocks("water_cell_block",
                     () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(4.0F, 6.0F)));  // 水牢方块，暂时普通方块
+                            .strength(4.0F, 6.0F)
+                            .noLootTable()));  // 水牢方块，暂时普通方块
 
     public static final DeferredBlock<Block> TRAINING_GROUND_FLOOR =
             registerBlocks("training_ground_floor",
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(2.0F, 6.0F)
-                            .friction(0.8F)));  // 训练场地板，较高摩擦
+                            .friction(0.8F)
+                            .noLootTable()));  // 训练场地板，较高摩擦,LootTable WIP
 
     public static final DeferredBlock<Block> BLOOD_STAIN =
             registerBlocks("blood_stain",
@@ -106,22 +112,26 @@ public class NACSblocks {
                             .strength(0.5F, 0.5F)
                             .noCollission()  // 无碰撞
                             .instabreak()  // 瞬间破坏
-                            .lightLevel(state -> 3)));  // 陈旧血迹，有微弱光照
+                            .lightLevel(state -> 3)
+                            .noLootTable()));  // 陈旧血迹，有微弱光照
 
     public static final DeferredBlock<Block> MONITOR_CENTER_BLOCK =
             registerBlocks("monitor_center_block",
                     () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(3.0F, 6.0F)));  // 监控中心控制台
+                            .strength(3.0F, 6.0F)
+                            .noLootTable()));  // 监控中心控制台
 
     public static final DeferredBlock<Block> FILE_CABINET =
             registerBlocks("file_cabinet",
                     () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(2.0F, 6.0F)));  // 档案室文件柜
+                            .strength(2.0F, 6.0F)
+                            .noLootTable()));  // 档案室文件柜
 
     public static final DeferredBlock<Block> CONFISCATED_ITEM_CHEST =
             registerBlocks("confiscated_item_chest",
                     () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(2.0F, 6.0F)));  // 违禁品储物箱
+                            .strength(2.0F, 6.0F)
+                            .noLootTable()));  // 违禁品储物箱
 
     // 装饰性方块
     public static final DeferredBlock<Block> SCHOOL_LIGHT =
@@ -129,13 +139,15 @@ public class NACSblocks {
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(1.0F, 3.0F)
                             .lightLevel(state -> 12)  // 比火把暗
-                            .noCollission()));  // 学校照明灯
+                            .noCollission()
+                            .noLootTable()));  // 学校照明灯
 
     public static final DeferredBlock<Block> BULLETIN_BOARD =
             registerBlocks("bulletin_board",
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(1.0F, 3.0F)
-                            .noOcclusion()));  // 公告板
+                            .noOcclusion()
+                            .noLootTable()));  // 公告板
 
     public static final DeferredBlock<Block> SCHOOL_DESK =
             registerBlocks("school_desk",
@@ -152,7 +164,8 @@ public class NACSblocks {
     public static final DeferredBlock<Block> SCHOOL_BED =
             registerBlocks("school_bed",
                     () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(1.0F, 3.0F)));  // 学校床铺
+                            .strength(1.0F, 3.0F)
+                            .noLootTable()));  // 学校床铺
 
     // 特殊方块
     public static final DeferredBlock<Block> LOOSE_BRICK =
@@ -166,7 +179,8 @@ public class NACSblocks {
             registerBlocks("entrance_sign",
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(1.0F, 3.0F)
-                            .noOcclusion()));  // 学校入口标识
+                            .noOcclusion()
+                            .noLootTable()));  // 学校入口标识
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         NACSitems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

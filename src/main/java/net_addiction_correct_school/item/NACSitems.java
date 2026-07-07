@@ -36,7 +36,7 @@ public class NACSitems {
             ITEMS.register("distress_note", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> STALE_BREAD =
-            ITEMS.register("stale_bread", () -> new Item(new Item.Properties()));
+            ITEMS.register("stale_bread", () -> new Item(new Item.Properties().food(NACSFoods.STALE_BREAD)));
 
     public static final DeferredItem<Item> SEDATIVE =
             ITEMS.register("sedative", () -> new Item(new Item.Properties()));
@@ -46,6 +46,15 @@ public class NACSitems {
 
     public static final DeferredItem<Item> COMPLIANCE_PROD =
             ITEMS.register("compliance_prod", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> REINFORCED_BRICK =
+            ITEMS.register("reinforced_brick", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> REINFORCED_REBAR =
+            ITEMS.register("reinforced_rebar", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> PAPER_DUST =
+            ITEMS.register("paper_dust", () -> new Item(new Item.Properties()));
 
     // Gear Items
     public static final DeferredItem<Item> INSTRUCTOR_UNIFORM =

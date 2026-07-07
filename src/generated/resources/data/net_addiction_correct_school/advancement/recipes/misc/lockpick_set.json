@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enrollment_agreement": {
+      "conditions": {
+        "items": [
+          {
+            "items": "net_addiction_correct_school:enrollment_agreement"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "net_addiction_correct_school:lockpick_set"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enrollment_agreement"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "net_addiction_correct_school:lockpick_set"
+    ]
+  }
+}
