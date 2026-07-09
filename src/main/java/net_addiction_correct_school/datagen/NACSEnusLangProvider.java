@@ -34,6 +34,7 @@ public class NACSEnusLangProvider extends LanguageProvider {
         add(NACSitems.LOCKPICK_SET.get(),"Lockpick Set");
         add(NACSitems.REINFORCED_REBAR.get(),"Reinforced Rebar");
         add(NACSitems.REINFORCED_BRICK.get(),"Reinforced Brick");
+        add(NACSitems.PAPER_DUST.get(), "Paper Dust");
         //Block
         add(NACSblocks.REINFORCED_WALL.get(), "Reinforced Wall");
         add(NACSblocks.SCHOOL_WALL.get(), "School Wall");
@@ -60,6 +61,7 @@ public class NACSEnusLangProvider extends LanguageProvider {
         add(NACSblocks.SCHOOL_BED.get(), "School Bed");
         add(NACSblocks.LOOSE_BRICK.get(), "Loose Brick");
         add(NACSblocks.ENTRANCE_SIGN.get(), "Entrance Sign");
+        add(NACSblocks.REINFORCED_BLOCK.get(), "Reinforced Block");
         //Creative Tab
         add("itemGroup.nacs_basics","NACS - Essentials");
         add("itemGroup.nacs_apparel", "NACS - Apparel");

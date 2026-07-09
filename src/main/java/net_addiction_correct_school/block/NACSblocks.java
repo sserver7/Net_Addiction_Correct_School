@@ -18,8 +18,13 @@ public class NACSblocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(NACSMod.MOD_ID);
 
+    public static final DeferredBlock<Block> REINFORCED_BLOCK =
+            registerBlocks("reinforced_block",
+                    () -> new Block(BlockBehaviour.Properties.of()
+                            .strength(50.0F, 2000.0F)));
+
     // 核心结构方块
-    public static final DeferredBlock<Block> REINFORCED_WALL =
+    public static final DeferredBlock<WallBlock> REINFORCED_WALL =
             registerBlocks("reinforced_wall",
                     () -> new WallBlock(BlockBehaviour.Properties.of()
                             .strength(50.0F, 2000.0F)

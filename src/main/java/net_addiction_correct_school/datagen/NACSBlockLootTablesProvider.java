@@ -43,6 +43,15 @@ public class NACSBlockLootTablesProvider extends BlockLootSubProvider {
                         .apply(ApplyExplosionDecay.explosionDecay())
         );
 
+        add(NACSblocks.REINFORCED_BLOCK.get(),
+                LootTable.lootTable()
+                        .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_BRICK.get())))
+                        .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_REBAR.get()))) // ← 钢筋
+                        .apply(ApplyExplosionDecay.explosionDecay())
+        );
+
         dropOther(NACSblocks.SCHOOL_WALL.get(), NACSitems.REINFORCED_BRICK);
         dropOther(NACSblocks.SCHOOL_FLOOR.get(), NACSitems.REINFORCED_BRICK);
         dropOther(NACSblocks.SCHOOL_CEILING.get(), NACSitems.REINFORCED_BRICK);

@@ -1,9 +1,13 @@
 package net_addiction_correct_school.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net_addiction_correct_school.NACSMod;
+import net_addiction_correct_school.block.NACSblocks;
 import net_addiction_correct_school.item.NACSitems;
 
 public class NACSItemModelsProvider extends ItemModelProvider {
@@ -35,5 +39,26 @@ public class NACSItemModelsProvider extends ItemModelProvider {
         basicItem(NACSitems.TOOLBOX.get());
         basicItem(NACSitems.ACCESS_CARD.get());
         basicItem(NACSitems.LOCKPICK_SET.get());
+
+        wallItem(NACSblocks.REINFORCED_WALL, NACSblocks.REINFORCED_BLOCK);
+
+
+    }
+
+    //抄的
+    private void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> base) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
+                .texture("texture", ResourceLocation.fromNamespaceAndPath(NACSMod.MOD_ID,
+                        "block/" + base.getId().getPath()));
+    }
+    private void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> base) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture", ResourceLocation.fromNamespaceAndPath(NACSMod.MOD_ID,
+                        "block/" + base.getId().getPath()));
+    }
+    private void wallItem(DeferredBlock<?> block, DeferredBlock<Block> base) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall", ResourceLocation.fromNamespaceAndPath(NACSMod.MOD_ID,
+                        "block/" + base.getId().getPath()));
     }
 }

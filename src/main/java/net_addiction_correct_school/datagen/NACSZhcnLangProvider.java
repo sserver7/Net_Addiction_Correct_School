@@ -34,6 +34,7 @@ public class NACSZhcnLangProvider extends LanguageProvider {
         add(NACSitems.LOCKPICK_SET.get(),"开锁工具");
         add(NACSitems.REINFORCED_REBAR.get(),"钢筋");
         add(NACSitems.REINFORCED_BRICK.get(),"强化砖");
+        add(NACSitems.PAPER_DUST.get(), "纸灰");
         //Block
         add(NACSblocks.REINFORCED_WALL.get(), "加固墙");
         add(NACSblocks.SCHOOL_WALL.get(), "学校墙壁");
@@ -60,6 +61,7 @@ public class NACSZhcnLangProvider extends LanguageProvider {
         add(NACSblocks.SCHOOL_BED.get(), "学校床铺");
         add(NACSblocks.LOOSE_BRICK.get(), "松动砖块");
         add(NACSblocks.ENTRANCE_SIGN.get(), "入口招牌");
+        add(NACSblocks.REINFORCED_BLOCK.get(), "强化砖块");
         //Creative Tab
         add("itemGroup.nacs_basics","NACS - 基础物品");
         add("itemGroup.nacs_apparel", "NACS - 服装");

@@ -15,8 +15,9 @@ public class NACSBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        simpleBlockWithItem(NACSblocks.REINFORCED_BLOCK.get(),cubeAll(NACSblocks.REINFORCED_BLOCK.get()));
         //simpleBlockWithItem(NACSblocks.REINFORCED_WALL.get(), cubeAll(NACSblocks.REINFORCED_WALL.get()));
-        wallBlock((WallBlock) NACSblocks.REINFORCED_WALL.get(),
-                modLoc("block/reinforced_wall"));
+        wallBlock(NACSblocks.REINFORCED_WALL.get(), blockTexture(NACSblocks.REINFORCED_BLOCK.get()));
+
     }
 }
