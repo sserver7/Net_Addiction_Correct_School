@@ -7,7 +7,7 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net_addiction_correct_school.NACSMod;
-import net_addiction_correct_school.item.NACSitems;
+import net_addiction_correct_school.item.NACSItems;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -17,18 +17,18 @@ public class NACSRecipesProvider extends RecipeProvider implements IConditionBui
         super(output, registries);
     }
 
-    public static final List<ItemLike> PAPER_DUST = List.of(NACSitems.ENROLLMENT_AGREEMENT);
+    public static final List<ItemLike> PAPER_DUST = List.of(NACSItems.ENROLLMENT_AGREEMENT);
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         //TODO Misc以后改
-        oreSmelting(recipeOutput, PAPER_DUST, RecipeCategory.MISC, NACSitems.PAPER_DUST, 1f, 100, null);
+        oreSmelting(recipeOutput, PAPER_DUST, RecipeCategory.MISC, NACSItems.PAPER_DUST, 1f, 100, null);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, NACSitems.LOCKPICK_SET)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, NACSItems.LOCKPICK_SET)
                 .pattern(" #")
                 .pattern("# ")
-                .define('#', NACSitems.RUSTY_WIRE)
-                .unlockedBy(getHasName(NACSitems.ENROLLMENT_AGREEMENT), has(NACSitems.ENROLLMENT_AGREEMENT))
+                .define('#', NACSItems.RUSTY_WIRE)
+                .unlockedBy(getHasName(NACSItems.ENROLLMENT_AGREEMENT), has(NACSItems.ENROLLMENT_AGREEMENT))
                 .save(recipeOutput);
 
     }

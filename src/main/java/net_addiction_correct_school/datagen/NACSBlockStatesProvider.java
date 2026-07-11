@@ -1,11 +1,10 @@
 package net_addiction_correct_school.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.WallBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net_addiction_correct_school.NACSMod;
-import net_addiction_correct_school.block.NACSblocks;
+import net_addiction_correct_school.block.NACSBlocks;
 
 public class NACSBlockStatesProvider extends BlockStateProvider {
 
@@ -15,9 +14,9 @@ public class NACSBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlockWithItem(NACSblocks.REINFORCED_BLOCK.get(),cubeAll(NACSblocks.REINFORCED_BLOCK.get()));
-        //simpleBlockWithItem(NACSblocks.REINFORCED_WALL.get(), cubeAll(NACSblocks.REINFORCED_WALL.get()));
-        wallBlock(NACSblocks.REINFORCED_WALL.get(), blockTexture(NACSblocks.REINFORCED_BLOCK.get()));
+        simpleBlockWithItem(NACSBlocks.REINFORCED_BLOCK.get(),cubeAll(NACSBlocks.REINFORCED_BLOCK.get()));
+        //simpleBlockWithItem(NACSBlocks.REINFORCED_WALL.get(), cubeAll(NACSBlocks.REINFORCED_WALL.get()));
+        wallBlock(NACSBlocks.REINFORCED_WALL.get(), blockTexture(NACSBlocks.REINFORCED_BLOCK.get()));
 
     }
 }

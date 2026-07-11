@@ -6,7 +6,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net_addiction_correct_school.NACSMod;
 
-public class NACSitems {
+public class NACSItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(NACSMod.MOD_ID);
 

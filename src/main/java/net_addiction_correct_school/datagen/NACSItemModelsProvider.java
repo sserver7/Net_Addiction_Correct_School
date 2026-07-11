@@ -7,8 +7,8 @@ import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net_addiction_correct_school.NACSMod;
-import net_addiction_correct_school.block.NACSblocks;
-import net_addiction_correct_school.item.NACSitems;
+import net_addiction_correct_school.block.NACSBlocks;
+import net_addiction_correct_school.item.NACSItems;
 
 public class NACSItemModelsProvider extends ItemModelProvider {
     public NACSItemModelsProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -18,29 +18,29 @@ public class NACSItemModelsProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         // 所有纯物品都使用 basicItem（手持物品模型，引用 textures/item/<name>.png）
-        basicItem(NACSitems.ENROLLMENT_AGREEMENT.get());
-        basicItem(NACSitems.TRACKING_BRACELET.get());
-        basicItem(NACSitems.MODEL_STUDENT_BADGE.get());
-        basicItem(NACSitems.RUSTY_WIRE.get());
-        basicItem(NACSitems.DISCIPLINE_LOG.get());
-        basicItem(NACSitems.MEDICAL_DOSSIER.get());
-        basicItem(NACSitems.FINANCIAL_LEDGER.get());
-        basicItem(NACSitems.DISTRESS_NOTE.get());
-        basicItem(NACSitems.STALE_BREAD.get());
-        basicItem(NACSitems.SEDATIVE.get());
-        basicItem(NACSitems.CALMING_PILL.get());
-        basicItem(NACSitems.COMPLIANCE_PROD.get());
-        basicItem(NACSitems.REINFORCED_BRICK.get());
-        basicItem(NACSitems.REINFORCED_REBAR.get());
-        basicItem(NACSitems.PAPER_DUST.get());
-        basicItem(NACSitems.INSTRUCTOR_UNIFORM.get());
-        basicItem(NACSitems.VISITOR_COAT.get());
-        basicItem(NACSitems.MAINTENANCE_GARB.get());
-        basicItem(NACSitems.TOOLBOX.get());
-        basicItem(NACSitems.ACCESS_CARD.get());
-        basicItem(NACSitems.LOCKPICK_SET.get());
+        basicItem(NACSItems.ENROLLMENT_AGREEMENT.get());
+        basicItem(NACSItems.TRACKING_BRACELET.get());
+        basicItem(NACSItems.MODEL_STUDENT_BADGE.get());
+        basicItem(NACSItems.RUSTY_WIRE.get());
+        basicItem(NACSItems.DISCIPLINE_LOG.get());
+        basicItem(NACSItems.MEDICAL_DOSSIER.get());
+        basicItem(NACSItems.FINANCIAL_LEDGER.get());
+        basicItem(NACSItems.DISTRESS_NOTE.get());
+        basicItem(NACSItems.STALE_BREAD.get());
+        basicItem(NACSItems.SEDATIVE.get());
+        basicItem(NACSItems.CALMING_PILL.get());
+        basicItem(NACSItems.COMPLIANCE_PROD.get());
+        basicItem(NACSItems.REINFORCED_BRICK.get());
+        basicItem(NACSItems.REINFORCED_REBAR.get());
+        basicItem(NACSItems.PAPER_DUST.get());
+        basicItem(NACSItems.INSTRUCTOR_UNIFORM.get());
+        basicItem(NACSItems.VISITOR_COAT.get());
+        basicItem(NACSItems.MAINTENANCE_GARB.get());
+        basicItem(NACSItems.TOOLBOX.get());
+        basicItem(NACSItems.ACCESS_CARD.get());
+        basicItem(NACSItems.LOCKPICK_SET.get());
 
-        wallItem(NACSblocks.REINFORCED_WALL, NACSblocks.REINFORCED_BLOCK);
+        wallItem(NACSBlocks.REINFORCED_WALL, NACSBlocks.REINFORCED_BLOCK);
 
 
     }

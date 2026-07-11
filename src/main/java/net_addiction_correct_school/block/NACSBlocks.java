@@ -10,11 +10,11 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net_addiction_correct_school.NACSMod;
-import net_addiction_correct_school.item.NACSitems;
+import net_addiction_correct_school.item.NACSItems;
 
 import java.util.function.Supplier;
 
-public class NACSblocks {
+public class NACSBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(NACSMod.MOD_ID);
 
@@ -190,7 +190,7 @@ public class NACSblocks {
                             .noLootTable()));  // 学校入口标识
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
-        NACSitems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        NACSItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     private static <T extends Block> DeferredBlock<T> registerBlocks(String name, Supplier<T> block) {

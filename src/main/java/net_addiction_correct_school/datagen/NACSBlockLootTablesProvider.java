@@ -10,8 +10,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
-import net_addiction_correct_school.block.NACSblocks;
-import net_addiction_correct_school.item.NACSitems;
+import net_addiction_correct_school.block.NACSBlocks;
+import net_addiction_correct_school.item.NACSItems;
 
 import java.util.Set;
 
@@ -22,42 +22,42 @@ public class NACSBlockLootTablesProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(NACSblocks.SURVEILLANCE_CAMERA.get());
-        dropSelf(NACSblocks.SCHOOL_DESK.get());
-        dropSelf(NACSblocks.SCHOOL_CHAIR.get());
-        add(NACSblocks.REINFORCED_WALL.get(),
+        dropSelf(NACSBlocks.SURVEILLANCE_CAMERA.get());
+        dropSelf(NACSBlocks.SCHOOL_DESK.get());
+        dropSelf(NACSBlocks.SCHOOL_CHAIR.get());
+        add(NACSBlocks.REINFORCED_WALL.get(),
                 LootTable.lootTable()
                         .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_BRICK.get())))
+                                .add(LootItem.lootTableItem(NACSItems.REINFORCED_BRICK.get())))
                         .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_REBAR.get()))) // ← 钢筋
+                                .add(LootItem.lootTableItem(NACSItems.REINFORCED_REBAR.get()))) // ← 钢筋
                         .apply(ApplyExplosionDecay.explosionDecay())
         );
 
-        add(NACSblocks.REINFORCED_DOOR_FRAME.get(),
+        add(NACSBlocks.REINFORCED_DOOR_FRAME.get(),
                 LootTable.lootTable()
                         .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_BRICK.get())))
+                                .add(LootItem.lootTableItem(NACSItems.REINFORCED_BRICK.get())))
                         .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_REBAR.get()))) // ← 钢筋
+                                .add(LootItem.lootTableItem(NACSItems.REINFORCED_REBAR.get()))) // ← 钢筋
                         .apply(ApplyExplosionDecay.explosionDecay())
         );
 
-        add(NACSblocks.REINFORCED_BLOCK.get(),
+        add(NACSBlocks.REINFORCED_BLOCK.get(),
                 LootTable.lootTable()
                         .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_BRICK.get())))
+                                .add(LootItem.lootTableItem(NACSItems.REINFORCED_BRICK.get())))
                         .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                                .add(LootItem.lootTableItem(NACSitems.REINFORCED_REBAR.get()))) // ← 钢筋
+                                .add(LootItem.lootTableItem(NACSItems.REINFORCED_REBAR.get()))) // ← 钢筋
                         .apply(ApplyExplosionDecay.explosionDecay())
         );
 
-        dropOther(NACSblocks.SCHOOL_WALL.get(), NACSitems.REINFORCED_BRICK);
-        dropOther(NACSblocks.SCHOOL_FLOOR.get(), NACSitems.REINFORCED_BRICK);
-        dropOther(NACSblocks.SCHOOL_CEILING.get(), NACSitems.REINFORCED_BRICK);
-        dropOther(NACSblocks.ELECTRIC_FENCE.get(), NACSitems.RUSTY_WIRE);
-        dropOther(NACSblocks.VENT_ENTRANCE.get(), NACSitems.REINFORCED_BRICK);
-        dropOther(NACSblocks.LOOSE_BRICK.get(), NACSitems.REINFORCED_BRICK);
+        dropOther(NACSBlocks.SCHOOL_WALL.get(), NACSItems.REINFORCED_BRICK);
+        dropOther(NACSBlocks.SCHOOL_FLOOR.get(), NACSItems.REINFORCED_BRICK);
+        dropOther(NACSBlocks.SCHOOL_CEILING.get(), NACSItems.REINFORCED_BRICK);
+        dropOther(NACSBlocks.ELECTRIC_FENCE.get(), NACSItems.RUSTY_WIRE);
+        dropOther(NACSBlocks.VENT_ENTRANCE.get(), NACSItems.REINFORCED_BRICK);
+        dropOther(NACSBlocks.LOOSE_BRICK.get(), NACSItems.REINFORCED_BRICK);
 
     }
 
@@ -65,6 +65,6 @@ public class NACSBlockLootTablesProvider extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return NACSblocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+        return NACSBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
 }
