@@ -41,6 +41,7 @@ public class NACSItemModelsProvider extends ItemModelProvider {
         basicItem(NACSItems.LOCKPICK_SET.get());
 
         wallItem(NACSBlocks.REINFORCED_WALL, NACSBlocks.REINFORCED_BLOCK);
+        wallItem(NACSBlocks.REINFORCED_WINDOW, NACSBlocks.REINFORCED_BLOCK);
 
 
     }

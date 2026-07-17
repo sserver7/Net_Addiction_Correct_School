@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "net_addiction_correct_school:block/reinforced_block"
+  }
+}

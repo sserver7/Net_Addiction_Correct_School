@@ -17,6 +17,7 @@ public class NACSBlockStatesProvider extends BlockStateProvider {
         simpleBlockWithItem(NACSBlocks.REINFORCED_BLOCK.get(),cubeAll(NACSBlocks.REINFORCED_BLOCK.get()));
         //simpleBlockWithItem(NACSBlocks.REINFORCED_WALL.get(), cubeAll(NACSBlocks.REINFORCED_WALL.get()));
         wallBlock(NACSBlocks.REINFORCED_WALL.get(), blockTexture(NACSBlocks.REINFORCED_BLOCK.get()));
+        wallBlock(NACSBlocks.REINFORCED_WINDOW.get(), modLoc("block/reinforced_window"));
 
     }
 }

@@ -20,7 +20,8 @@ public class NACSBlockTagsProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 //        tag()TODO补上Gen
         tag(BlockTags.WALLS)
-                .add(NACSBlocks.REINFORCED_WALL.get());
+                .add(NACSBlocks.REINFORCED_WALL.get())
+                .add(NACSBlocks.REINFORCED_WINDOW.get());
         //TODO该第三个了
     }
 }

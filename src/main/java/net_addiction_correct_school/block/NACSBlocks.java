@@ -41,9 +41,9 @@ public class NACSBlocks {
                     () -> new Block(BlockBehaviour.Properties.of()
                             .strength(2.0F, 6.0F)));  // 学校地板
 
-    public static final DeferredBlock<Block> REINFORCED_WINDOW =
+    public static final DeferredBlock<WallBlock> REINFORCED_WINDOW =
             registerBlocks("reinforced_window",
-                    () -> new Block(BlockBehaviour.Properties.of()
+                    () -> new WallBlock(BlockBehaviour.Properties.of()
                             .strength(10.0F, 1200.0F)
                             .noOcclusion()  // 不遮挡光线
                             .isValidSpawn((state, getter, pos, entity) -> false)
