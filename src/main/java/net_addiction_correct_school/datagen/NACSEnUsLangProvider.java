@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 package net_addiction_correct_school.datagen;
 
 import net.minecraft.data.PackOutput;
@@ -16,7 +17,7 @@ public class NACSEnUsLangProvider extends LanguageProvider {
         //Item
         add(NACSItems.ACCESS_CARD.get(),"Access Card");
         add(NACSItems.ENROLLMENT_AGREEMENT.get(),"Enrollment Contract");
-        add(NACSItems.TRACKING_BRACELET.get(),"Tracking Bracelet");
+        //add(NACSItems.TRACKING_BRACELET.get(),"Tracking Bracelet");
         add(NACSItems.MODEL_STUDENT_BADGE.get(),"Model Student Badge");
         add(NACSItems.RUSTY_WIRE.get(),"Rusty Wire");
         add(NACSItems.DISCIPLINE_LOG.get(),"Discipline Log");

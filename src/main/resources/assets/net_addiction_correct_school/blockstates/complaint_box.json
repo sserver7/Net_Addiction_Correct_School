@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "net_addiction_correct_school:block/complaint_box" },
+    "facing=east":  { "model": "net_addiction_correct_school:block/complaint_box", "y": 90 },
+    "facing=south": { "model": "net_addiction_correct_school:block/complaint_box", "y": 180 },
+    "facing=west":  { "model": "net_addiction_correct_school:block/complaint_box", "y": 270 }
+  }
+}

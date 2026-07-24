@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 package net_addiction_correct_school;
 
 import net.neoforged.bus.api.IEventBus;

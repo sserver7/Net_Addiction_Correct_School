@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 package net_addiction_correct_school.block;
 
 import net.minecraft.world.item.BlockItem;
@@ -63,9 +64,10 @@ public class NACSBlocks {
 
     public static final DeferredBlock<Block> COMPLAINT_BOX =
             registerBlocks("complaint_box",
-                    () -> new Block(BlockBehaviour.Properties.of()
+                    () -> new ComplaintBoxBlock(BlockBehaviour.Properties.of()
                             .strength(2.5F, 6.0F)
-                            .noLootTable()));  // 举报箱，暂时普通方块
+                            .noOcclusion()
+                            .noLootTable()));
 
     public static final DeferredBlock<Block> ELECTRIC_FENCE =
             registerBlocks("electric_fence",

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 package net_addiction_correct_school.item;
 
 import net.minecraft.core.registries.Registries;
@@ -21,7 +22,7 @@ public class itemtab {
                     .title(Component.translatable("itemGroup.nacs_basics"))
                     .displayItems((parameters, output) -> {
                         output.accept(NACSItems.ENROLLMENT_AGREEMENT.get());
-                        output.accept(NACSItems.TRACKING_BRACELET.get());
+                        //output.accept(NACSItems.TRACKING_BRACELET.get());
                         output.accept(NACSItems.MODEL_STUDENT_BADGE.get());
                         output.accept(NACSItems.RUSTY_WIRE.get());
                         output.accept(NACSItems.COMPLIANCE_PROD.get());

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 package net_addiction_correct_school.item;
 
 import net.minecraft.world.item.Item;
@@ -5,6 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net_addiction_correct_school.NACSMod;
+import net_addiction_correct_school.item.custom.NACSFuelItem;
 
 public class NACSItems {
     public static final DeferredRegister.Items ITEMS =
@@ -12,10 +14,10 @@ public class NACSItems {
 
     // Basic Items
     public static final DeferredItem<Item> ENROLLMENT_AGREEMENT =
+//            ITEMS.register("enrollment_agreement", () -> new NACSFuelItem(new Item.Properties(), 50));
             ITEMS.register("enrollment_agreement", () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> TRACKING_BRACELET =
-            ITEMS.register("tracking_bracelet", () -> new Item(new Item.Properties()));
+    /*public static final DeferredItem<Item> TRACKING_BRACELET =
+            ITEMS.register("tracking_bracelet", () -> new Item(new Item.Properties()));*/
 
     public static final DeferredItem<Item> MODEL_STUDENT_BADGE =
             ITEMS.register("model_student_badge", () -> new Item(new Item.Properties()));

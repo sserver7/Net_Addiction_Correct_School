@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 package net_addiction_correct_school.datagen;
 
 import net.minecraft.data.PackOutput;
@@ -19,7 +20,6 @@ public class NACSItemModelsProvider extends ItemModelProvider {
     protected void registerModels() {
         // 所有纯物品都使用 basicItem（手持物品模型，引用 textures/item/<name>.png）
         basicItem(NACSItems.ENROLLMENT_AGREEMENT.get());
-        basicItem(NACSItems.TRACKING_BRACELET.get());
         basicItem(NACSItems.MODEL_STUDENT_BADGE.get());
         basicItem(NACSItems.RUSTY_WIRE.get());
         basicItem(NACSItems.DISCIPLINE_LOG.get());

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 package net_addiction_correct_school;
 
 import net.minecraft.core.HolderLookup;
@@ -35,5 +36,7 @@ public class NACSDataGenerator {
         generator.addProvider(event.includeClient(), new NACSItemModelsProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new NACSEnUsLangProvider(packOutput));
         generator.addProvider(event.includeClient(), new NACSZhCnLangProvider(packOutput));
+
+        generator.addProvider(event.includeServer(), new NACSDataMapProvider(packOutput, lookupProvider));
     }
 }
