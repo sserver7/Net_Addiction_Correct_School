@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "net_addiction_correct_school:block/entrance_sign" },
+    "facing=east":  { "model": "net_addiction_correct_school:block/entrance_sign", "y": 90 },
+    "facing=south": { "model": "net_addiction_correct_school:block/entrance_sign", "y": 180 },
+    "facing=west":  { "model": "net_addiction_correct_school:block/entrance_sign", "y": 270 }
+  }
+}

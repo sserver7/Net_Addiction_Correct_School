@@ -32,7 +32,7 @@ items = [
     "maintenance_garb", "toolbox", "access_card", "lockpick_set"
 ]
 
-base_dir = "src/main/resources/assets/net_addition_correct_school/textures"
+base_dir = "src/main/resources/assets/net_addiction_correct_school/textures"
 
 for name in blocks:
     path = f"{base_dir}/block/{name}.png"

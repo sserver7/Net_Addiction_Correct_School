@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "net_addiction_correct_school:block/reinforced_door_frame" },
+    "facing=east":  { "model": "net_addiction_correct_school:block/reinforced_door_frame", "y": 90 },
+    "facing=south": { "model": "net_addiction_correct_school:block/reinforced_door_frame", "y": 180 },
+    "facing=west":  { "model": "net_addiction_correct_school:block/reinforced_door_frame", "y": 270 }
+  }
+}

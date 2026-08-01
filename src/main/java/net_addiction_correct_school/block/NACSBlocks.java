@@ -4,9 +4,11 @@ package net_addiction_correct_school.block;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -71,17 +73,17 @@ public class NACSBlocks {
 
     public static final DeferredBlock<Block> ELECTRIC_FENCE =
             registerBlocks("electric_fence",
-                    () -> new Block(BlockBehaviour.Properties.of()
+                    () -> new ElectricFenceBlock(BlockBehaviour.Properties.of()
                             .strength(3.0F, 6.0F)
                             .noCollission()  // 无碰撞体积
                             .instabreak()));  // 铁丝网/电网，可快速破坏
 
-    public static final DeferredBlock<Block> DETENTION_DOOR =
+    public static final DeferredBlock<DoorBlock> DETENTION_DOOR =
             registerBlocks("detention_door",
-                    () -> new Block(BlockBehaviour.Properties.of()
+                    () -> new DoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of()
                             .strength(10.0F, 1200.0F)
                             .noOcclusion()
-                            .noLootTable()));  // 禁闭室铁门，暂时普通方块
+                            .noLootTable()));  // 禁闭室铁门
 
     public static final DeferredBlock<Block> VENT_ENTRANCE =
             registerBlocks("vent_entrance",
@@ -91,8 +93,9 @@ public class NACSBlocks {
 
     public static final DeferredBlock<Block> REINFORCED_DOOR_FRAME =
             registerBlocks("reinforced_door_frame",
-                    () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(8.0F, 1200.0F)));  // 强化门框，用于强化门窗
+                    () -> new ReinforcedDoorFrameBlock(BlockBehaviour.Properties.of()
+                            .strength(8.0F, 1200.0F)
+                            .noOcclusion()));
 
     // 特殊区域方块
     public static final DeferredBlock<Block> CONFINEMENT_WALL =
@@ -186,7 +189,7 @@ public class NACSBlocks {
 
     public static final DeferredBlock<Block> ENTRANCE_SIGN =
             registerBlocks("entrance_sign",
-                    () -> new Block(BlockBehaviour.Properties.of()
+                    () -> new EntranceSignBlock(BlockBehaviour.Properties.of()
                             .strength(1.0F, 3.0F)
                             .noOcclusion()
                             .noLootTable()));  // 学校入口标识
