@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "net_addiction_correct_school:block/training_ground_floor_top",
+    "bottom": "net_addiction_correct_school:block/training_ground_floor_bottom",
+    "side": "net_addiction_correct_school:block/training_ground_floor_side"
+  }
+}

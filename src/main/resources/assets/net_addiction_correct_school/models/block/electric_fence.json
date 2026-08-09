@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "net_addiction_correct_school"
+    "cross": "net_addiction_correct_school:block/electric_fence"
   }
 }

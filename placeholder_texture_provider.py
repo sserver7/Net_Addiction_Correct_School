@@ -16,10 +16,10 @@ def create_placeholder(path):
 # 方块纹理列表
 blocks = [
     "reinforced_wall", "school_wall", "school_floor", "school_ceiling",
-    "complaint_box", "detention_door", "vent_entrance", "reinforced_door_frame",
-    "confinement_wall", "water_cell_block", "training_ground_floor", "blood_stain",
-    "monitor_center_block", "file_cabinet", "confiscated_item_chest", "school_light",
-    "entrance_sign", "loose_brick", "reinforced_window", "surveillance_camera",
+    "complaint_box", "detention_door_bottom", "detention_door_top", "vent_entrance",
+    "confinement_wall", "training_ground_floor", "blood_stain",
+    "monitor_center_block", "file_cabinet", "confiscated_item_chest","school_light_side", "school_light_light",
+    "entrance_sign", "loose_brick", "surveillance_camera",
     "electric_fence", "bulletin_board", "school_desk", "school_chair", "school_bed"
 ]
 
