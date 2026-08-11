@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 package com.sserver7.net_addiction_correct_school.block;
 
+import com.sserver7.net_addiction_correct_school.block.custom.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -13,10 +14,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import com.sserver7.net_addiction_correct_school.NACSMod;
-import com.sserver7.net_addiction_correct_school.block.custom.ComplaintBoxBlock;
-import com.sserver7.net_addiction_correct_school.block.custom.ElectricFenceBlock;
-import com.sserver7.net_addiction_correct_school.block.custom.EntranceSignBlock;
-import com.sserver7.net_addiction_correct_school.block.custom.ReinforcedDoorFrameBlock;
 import com.sserver7.net_addiction_correct_school.item.NACSItems;
 
 import java.util.function.Supplier;
@@ -82,9 +79,9 @@ public class NACSBlocks {
                             .noCollission()  // 无碰撞体积
                             .instabreak()));  // 铁丝网/电网，可快速破坏
 
-    public static final DeferredBlock<DoorBlock> DETENTION_DOOR =
+    public static final DeferredBlock<DetentionDoorBlock> DETENTION_DOOR =
             registerBlocks("detention_door",
-                    () -> new DoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of()
+                    () -> new DetentionDoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of()
                             .strength(10.0F, 1200.0F)
                             .noOcclusion()
                             .noLootTable()));  // 禁闭室铁门

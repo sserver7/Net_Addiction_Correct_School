@@ -16,6 +16,7 @@ public class NACSMod {
         NACSAttachmentTypes.register(modEventBus);
         NACSItems.register(modEventBus);
         NACSBlocks.register(modEventBus);
+        NACSBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         itemtab.CREATIVE_MODE_TABS.register(modEventBus);
         System.out.println("NACS Mod initialized successfully!");
     }
