@@ -15,6 +15,7 @@ public class NACSBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        //TODO 补全模型
         simpleBlockWithItem(NACSBlocks.REINFORCED_BLOCK.get(),cubeAll(NACSBlocks.REINFORCED_BLOCK.get()));
         simpleBlockWithItem(NACSBlocks.CONFINEMENT_WALL.get(), cubeAll(NACSBlocks.CONFINEMENT_WALL.get()));
         //simpleBlockWithItem(NACSBlocks.REINFORCED_WALL.get(), cubeAll(NACSBlocks.REINFORCED_WALL.get()));
