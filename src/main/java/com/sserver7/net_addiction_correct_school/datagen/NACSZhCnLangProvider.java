@@ -67,5 +67,7 @@ public class NACSZhCnLangProvider extends LanguageProvider {
         add("itemGroup.nacs_basics","NACS - 基础物品");
         add("itemGroup.nacs_apparel", "NACS - 服装");
         add("itemGroup.nacs_utilities", "NACS - 工具");
+        //Message
+        add("message.nacs_door_locked", "门已上锁");
     }
 }

@@ -4,22 +4,22 @@ import com.sserver7.net_addiction_correct_school.blockentity.DetentionDoorBlockE
 import net.minecraft.core.BlockPos;
 
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.phys.BlockHitResult;
-import net.neoforged.neoforge.registries.DeferredBlock;
 import org.jetbrains.annotations.Nullable;
+import net.minecraft.network.chat.Component;
+
+import java.awt.*;
 
 public class DetentionDoorBlock extends DoorBlock implements EntityBlock {
+
     // 注意：构造参数需要 BlockSetType，决定门的声音和开关行为
     public DetentionDoorBlock(BlockSetType type, Properties properties) {
         super(type, properties);
@@ -53,7 +53,7 @@ public class DetentionDoorBlock extends DoorBlock implements EntityBlock {
             } else {
                 // 未解锁：提示玩家
                 player.displayClientMessage(
-                    net.minecraft.network.chat.Component.literal("§c门被锁住了！需要用撬锁工具"), 
+                    net.minecraft.network.chat.Component.translatable("message.nacs_door_locked"),
                     true
                 );
                 return InteractionResult.SUCCESS;

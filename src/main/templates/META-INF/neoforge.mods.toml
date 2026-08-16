@@ -39,7 +39,7 @@ displayName="${mod_name}" #mandatory
 #logoFile="examplemod.png" #optional
 
 # A text field displayed in the mod UI
-#credits="" #optional
+credits="感谢“世界上最帅之人”提供的ElectricFence材质"
 
 # The authors of the mod, displayed in the mod UI (optional)
 authors="sserver7"

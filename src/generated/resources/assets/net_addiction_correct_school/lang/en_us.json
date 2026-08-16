@@ -44,5 +44,6 @@
   "item.net_addiction_correct_school.visitor_coat": "Visitor Coat",
   "itemGroup.nacs_apparel": "NACS - Apparel",
   "itemGroup.nacs_basics": "NACS - Essentials",
-  "itemGroup.nacs_utilities": "NACS - Utilities"
+  "itemGroup.nacs_utilities": "NACS - Utilities",
+  "message.nacs_door_locked": "Door was locked"
 }

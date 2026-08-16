@@ -21,7 +21,7 @@ public class NACSBlockStatesProvider extends BlockStateProvider {
         //simpleBlockWithItem(NACSBlocks.REINFORCED_WALL.get(), cubeAll(NACSBlocks.REINFORCED_WALL.get()));
         wallBlock(NACSBlocks.REINFORCED_WALL.get(), blockTexture(NACSBlocks.REINFORCED_BLOCK.get()));
         //wallBlockWithRenderType(NACSBlocks.REINFORCED_WINDOW.get(), modLoc("block/reinforced_window"), "cutout");
-        doorBlockWithRenderType(NACSBlocks.DETENTION_DOOR.get(), modLoc("block/detention_door_bottom"),modLoc("block/detention_door_top"),"cutout");
+        //doorBlockWithRenderType(NACSBlocks.DETENTION_DOOR.get(), modLoc("block/detention_door_bottom"),modLoc("block/detention_door_top"),"cutout");
 
     }
 }

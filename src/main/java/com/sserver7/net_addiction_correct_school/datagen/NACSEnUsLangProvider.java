@@ -67,5 +67,7 @@ public class NACSEnUsLangProvider extends LanguageProvider {
         add("itemGroup.nacs_basics","NACS - Essentials");
         add("itemGroup.nacs_apparel", "NACS - Apparel");
         add("itemGroup.nacs_utilities", "NACS - Utilities");
+        //Message
+        add("message.nacs_door_locked", "Door was locked");
     }
 }
