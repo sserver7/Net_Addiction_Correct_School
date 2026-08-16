@@ -86,9 +86,9 @@ public class NACSBlocks {
                             .noOcclusion()
                             .noLootTable()));  // 禁闭室铁门
 
-    public static final DeferredBlock<Block> VENT_ENTRANCE =
+    public static final DeferredBlock<VentEntranceBlock> VENT_ENTRANCE =
             registerBlocks("vent_entrance",
-                    () -> new Block(BlockBehaviour.Properties.of()
+                    () -> new VentEntranceBlock(BlockBehaviour.Properties.of()
                             .strength(1.0F, 3.0F)
                             .noOcclusion()));  // 通风管道入口，暂时普通方块
 

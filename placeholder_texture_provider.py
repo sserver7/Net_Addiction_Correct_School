@@ -1,4 +1,4 @@
-from PIL import Image
+'''from PIL import Image
 import os
 
 # 颜色：紫黑格子（0xFF00FF 和 0x000000 交替）
@@ -45,3 +45,5 @@ for name in items:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     create_placeholder(path)
     print(f"Created {path}")
+'''
+#已废弃
