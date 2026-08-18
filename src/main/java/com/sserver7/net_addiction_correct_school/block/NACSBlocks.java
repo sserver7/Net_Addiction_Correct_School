@@ -174,11 +174,9 @@ public class NACSBlocks {
                             .strength(1.5F, 3.0F)
                             .noOcclusion()));  // 椅子
 
-    public static final DeferredBlock<Block> SCHOOL_BED =
+    /*public static final DeferredBlock<SchoolBedBlock> SCHOOL_BED =
             registerBlocks("school_bed",
-                    () -> new Block(BlockBehaviour.Properties.of()
-                            .strength(1.0F, 3.0F)
-                            .noLootTable()));  // 学校床铺
+                    () -> new SchoolBedBlock());  // 学校床铺*/
 
     // 特殊方块
     public static final DeferredBlock<Block> LOOSE_BRICK =

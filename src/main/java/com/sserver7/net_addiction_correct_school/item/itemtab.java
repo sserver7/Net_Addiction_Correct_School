@@ -60,7 +60,7 @@ public class itemtab {
                         output.accept(NACSBlocks.BULLETIN_BOARD.get());
                         output.accept(NACSBlocks.SCHOOL_DESK.get());
                         output.accept(NACSBlocks.SCHOOL_CHAIR.get());
-                        output.accept(NACSBlocks.SCHOOL_BED.get());
+                        //output.accept(NACSBlocks.SCHOOL_BED.get());
                         output.accept(NACSBlocks.LOOSE_BRICK.get());
                         output.accept(NACSBlocks.ENTRANCE_SIGN.get());
                     })

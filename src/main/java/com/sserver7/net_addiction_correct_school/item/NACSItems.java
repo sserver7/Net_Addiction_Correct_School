@@ -1,7 +1,13 @@
 // SPDX-License-Identifier: MIT
 package com.sserver7.net_addiction_correct_school.item;
 
+import com.sserver7.net_addiction_correct_school.item.custom.NACSFoods;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -51,8 +57,38 @@ public class NACSItems {
     public static final DeferredItem<Item> REINFORCED_BRICK =
             ITEMS.register("reinforced_brick", () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> REINFORCED_REBAR =
-            ITEMS.register("reinforced_rebar", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<SwordItem> REINFORCED_REBAR =
+            ITEMS.register("reinforced_rebar", () -> new SwordItem(new Tier() {//填个数
+                @Override
+                public int getUses() {
+                    return 0;
+                }
+
+                @Override
+                public float getSpeed() {
+                    return 0;
+                }
+
+                @Override
+                public float getAttackDamageBonus() {
+                    return 0;
+                }
+
+                @Override
+                public TagKey<Block> getIncorrectBlocksForDrops() {
+                    return null;
+                }
+
+                @Override
+                public int getEnchantmentValue() {
+                    return 0;
+                }
+
+                @Override
+                public Ingredient getRepairIngredient() {
+                    return null;
+                }
+            }, new Item.Properties()));
 
     public static final DeferredItem<Item> PAPER_DUST =
             ITEMS.register("paper_dust", () -> new Item(new Item.Properties()));

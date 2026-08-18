@@ -18,6 +18,7 @@ public class NACSBlockStatesProvider extends BlockStateProvider {
         //TODO 补全模型
         simpleBlockWithItem(NACSBlocks.REINFORCED_BLOCK.get(),cubeAll(NACSBlocks.REINFORCED_BLOCK.get()));
         simpleBlockWithItem(NACSBlocks.CONFINEMENT_WALL.get(), cubeAll(NACSBlocks.CONFINEMENT_WALL.get()));
+        simpleBlockWithItem(NACSBlocks.LOOSE_BRICK.get(), cubeAll(NACSBlocks.LOOSE_BRICK.get()));
         //simpleBlockWithItem(NACSBlocks.REINFORCED_WALL.get(), cubeAll(NACSBlocks.REINFORCED_WALL.get()));
         wallBlock(NACSBlocks.REINFORCED_WALL.get(), blockTexture(NACSBlocks.REINFORCED_BLOCK.get()));
         //wallBlockWithRenderType(NACSBlocks.REINFORCED_WINDOW.get(), modLoc("block/reinforced_window"), "cutout");

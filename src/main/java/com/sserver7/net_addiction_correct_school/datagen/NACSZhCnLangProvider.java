@@ -59,7 +59,7 @@ public class NACSZhCnLangProvider extends LanguageProvider {
         add(NACSBlocks.BULLETIN_BOARD.get(), "公告板");
         add(NACSBlocks.SCHOOL_DESK.get(), "学校课桌");
         add(NACSBlocks.SCHOOL_CHAIR.get(), "学校椅子");
-        add(NACSBlocks.SCHOOL_BED.get(), "学校床铺");
+        //add(NACSBlocks.SCHOOL_BED.get(), "学校床铺");
         add(NACSBlocks.LOOSE_BRICK.get(), "松动砖块");
         add(NACSBlocks.ENTRANCE_SIGN.get(), "入口招牌");
         add(NACSBlocks.REINFORCED_BLOCK.get(), "强化砖块");
@@ -69,5 +69,6 @@ public class NACSZhCnLangProvider extends LanguageProvider {
         add("itemGroup.nacs_utilities", "NACS - 工具");
         //Message
         add("message.nacs_door_locked", "门已上锁");
+        //add("message.nacs_sleep_failed","睡不了一点！");
     }
 }

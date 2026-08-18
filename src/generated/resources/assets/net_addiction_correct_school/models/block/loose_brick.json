@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "net_addiction_correct_school:block/loose_brick"
+  }
+}

@@ -59,7 +59,7 @@ public class NACSEnUsLangProvider extends LanguageProvider {
         add(NACSBlocks.BULLETIN_BOARD.get(), "Bulletin Board");
         add(NACSBlocks.SCHOOL_DESK.get(), "School Desk");
         add(NACSBlocks.SCHOOL_CHAIR.get(), "School Chair");
-        add(NACSBlocks.SCHOOL_BED.get(), "School Bed");
+        //add(NACSBlocks.SCHOOL_BED.get(), "School Bed");
         add(NACSBlocks.LOOSE_BRICK.get(), "Loose Brick");
         add(NACSBlocks.ENTRANCE_SIGN.get(), "Entrance Sign");
         add(NACSBlocks.REINFORCED_BLOCK.get(), "Reinforced Block");
@@ -69,5 +69,6 @@ public class NACSEnUsLangProvider extends LanguageProvider {
         add("itemGroup.nacs_utilities", "NACS - Utilities");
         //Message
         add("message.nacs_door_locked", "Door was locked");
+        //add("message.nacs_sleep_failed","Sleep Failed");
     }
 }

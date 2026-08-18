@@ -2,6 +2,7 @@ package com.sserver7.net_addiction_correct_school;
 
 import com.sserver7.net_addiction_correct_school.block.NACSBlocks;
 import com.sserver7.net_addiction_correct_school.blockentity.DetentionDoorBlockEntity;
+//import com.sserver7.net_addiction_correct_school.blockentity.SchoolBedBlockEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -20,4 +21,11 @@ public class NACSBlockEntities {
                             DetentionDoorBlockEntity::new,
                             NACSBlocks.DETENTION_DOOR.get()
                     ).build(null));
+
+    /*public static final Supplier<BlockEntityType<SchoolBedBlockEntity>> SCHOOL_BED_BE =
+            BLOCK_ENTITIES.register("school_bed_be",
+                    () -> BlockEntityType.Builder.of(
+                            SchoolBedBlockEntity::new,
+                            NACSBlocks.SCHOOL_BED.get()
+                    ).build(null));*/
 }

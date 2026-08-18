@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-package com.sserver7.net_addiction_correct_school.item;
+package com.sserver7.net_addiction_correct_school.item.custom;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
