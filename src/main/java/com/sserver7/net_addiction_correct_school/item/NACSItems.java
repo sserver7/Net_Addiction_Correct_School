@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 package com.sserver7.net_addiction_correct_school.item;
 
+import com.sserver7.net_addiction_correct_school.item.custom.LockpickSetItem;
 import com.sserver7.net_addiction_correct_school.item.custom.NACSFoods;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -110,8 +111,8 @@ public class NACSItems {
     public static final DeferredItem<Item> ACCESS_CARD =
             ITEMS.register("access_card", () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> LOCKPICK_SET =
-            ITEMS.register("lockpick_set", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<LockpickSetItem> LOCKPICK_SET =
+            ITEMS.register("lockpick_set", () -> new LockpickSetItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

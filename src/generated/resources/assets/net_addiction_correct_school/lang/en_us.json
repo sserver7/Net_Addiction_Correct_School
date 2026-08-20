@@ -12,7 +12,6 @@
   "block.net_addiction_correct_school.monitor_center_block": "Monitor Center Block",
   "block.net_addiction_correct_school.reinforced_block": "Reinforced Block",
   "block.net_addiction_correct_school.reinforced_wall": "Reinforced Wall",
-  "block.net_addiction_correct_school.school_bed": "School Bed",
   "block.net_addiction_correct_school.school_ceiling": "School Ceiling",
   "block.net_addiction_correct_school.school_chair": "School Chair",
   "block.net_addiction_correct_school.school_desk": "School Desk",
@@ -45,5 +44,6 @@
   "itemGroup.nacs_apparel": "NACS - Apparel",
   "itemGroup.nacs_basics": "NACS - Essentials",
   "itemGroup.nacs_utilities": "NACS - Utilities",
-  "message.nacs_door_locked": "Door was locked"
+  "message.nacs_door_locked": "Door was locked",
+  "message.nacs_sleep_failed": "Sleep Failed"
 }

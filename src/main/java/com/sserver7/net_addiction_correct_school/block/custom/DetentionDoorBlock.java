@@ -1,11 +1,15 @@
 package com.sserver7.net_addiction_correct_school.block.custom;
 
 import com.sserver7.net_addiction_correct_school.blockentity.DetentionDoorBlockEntity;
+import com.sserver7.net_addiction_correct_school.item.custom.LockpickSetItem;
 import net.minecraft.core.BlockPos;
 
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.EntityBlock;
@@ -32,13 +36,16 @@ public class DetentionDoorBlock extends DoorBlock implements EntityBlock {
         return new DetentionDoorBlockEntity(pos, state);
     }
 
+
+
     // ========== 右键交互（徒手开门） ==========
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
                                                Player player, BlockHitResult hitResult) {
+        System.out.println("[DEBUG] useWithoutItemOn called");
         if (level.isClientSide) {
             // 客户端不处理，等待服务端结果
-            return InteractionResult.SUCCESS;
+            return InteractionResult.sidedSuccess(true);
         }
 
         // 获取方块实体，读取 Unlocked 状态
@@ -48,7 +55,7 @@ public class DetentionDoorBlock extends DoorBlock implements EntityBlock {
                 boolean willOpen = !state.getValue(OPEN);
                 this.setOpen(player, level, state, pos, willOpen);
                 // 播放开门/关门音效
-                this.playSound(player, level, pos, willOpen);
+                //this.playSound(player, level, pos, willOpen);
                 return InteractionResult.SUCCESS;
             } else {
                 // 未解锁：提示玩家
@@ -62,11 +69,29 @@ public class DetentionDoorBlock extends DoorBlock implements EntityBlock {
         return InteractionResult.PASS;
     }
 
-    // 播放门音效的辅助方法（参考原版 DoorBlock）
+    @Override
+    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+        System.out.println("[DEBUG] useItemOn called");
+        if (!level.isClientSide){
+
+
+            if (stack.getItem() instanceof LockpickSetItem){
+                if (level.getBlockEntity(pos) instanceof DetentionDoorBlockEntity DETENTION_DOOR_BE){
+                    DETENTION_DOOR_BE.setUnlocked(true);
+                    return ItemInteractionResult.CONSUME;
+                }
+            }
+        }
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+
+
+    /*// 播放门音效的辅助方法（参考原版 DoorBlock）
     private void playSound(@Nullable net.minecraft.world.entity.Entity entity, Level level, BlockPos pos, boolean open) {
+        System.out.println("[DEBUG] playSound called");
         level.playSound(entity, pos, 
             open ? net.minecraft.sounds.SoundEvents.IRON_DOOR_OPEN 
                  : net.minecraft.sounds.SoundEvents.IRON_DOOR_CLOSE,
             SoundSource.BLOCKS, 1.0F, 1.0F);
-    }
+    }*/
 }
